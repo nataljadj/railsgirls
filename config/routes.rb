@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/info'
+  resources :comments, only: [:create, :destroy]
 
   resources :ideas
 
